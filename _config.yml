@@ -178,3 +178,12 @@ deploy:
   type: git
   repo: git@121.41.105.96:/www/repo/hexo.git
   branch: master
+
+
+analytics:
+  google_analytics:
+    enable: true
+    measurement_id: G-WYN5KLV121
+  microsoft_clarity:
+    enable: false
+    project_id: <your project id under Setting, Overview>
