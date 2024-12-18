@@ -32,7 +32,14 @@ mixin make_post(item, is_detail)
                             a.a-tag(href=config.root + item.path, title= item.name)= item.name
                             span &nbsp;
                             - });
+
         if is_detail
+            p.post-meta(style="color: #767676")
+                | 本文共
+                span.post-count= wordcount(item.content)
+                | 字,阅读需要约
+                span.post-count= min2read(item.content)
+                | 分钟
             div.post-abstract.pages-format!= item.content
         else
             p.post-abstract!= item.description || truncate(strip_html(item.content.replace(/<pre(?: |>)[^]*?<\/pre>/gm, ' ')), {length: 50})
