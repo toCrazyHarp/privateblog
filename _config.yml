@@ -106,6 +106,7 @@ ignore:
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: typography
+##next
 
 plugin:
   - hexo-generator-category-enhance
