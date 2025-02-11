@@ -35,6 +35,6 @@
     "prismjs": "^1.29.0"
   },
   "devDependencies": {
-    "postcss": "^8.4.49"
+    "postcss": "^8.5.2"
   }
 }
