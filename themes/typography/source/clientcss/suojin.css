@@ -1,5 +1,0 @@
-.post-abstract + p br ::after {
-    content: " ";         /* 插入一个空格 */
-    display: inline-block; /* 使其成为内联块级元素 */
-    width: 1.5em;          /* 设置缩进的宽度，这里 1.5em 相当于两个字符宽度 */
-}
