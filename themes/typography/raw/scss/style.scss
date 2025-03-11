@@ -1,6 +1,6 @@
 $backgroundColor: #ffffff !default;
 $foregroundColor: #2e405b !default;
-$fontList: "LXGW Wenkai","Source Sans Pro", "Roboto", "Helvetica", "Helvetica Neue",
+$fontList: "LXGW WenKai TC", serif,"Source Sans Pro", "Roboto", "Helvetica", "Helvetica Neue",
   "Source Han Sans SC", "Source Han Sans TC", "PingFang SC", "PingFang HK",
   "PingFang TC", sans-serif !default;
 $titleFontList: "HiraMinProN-W6", "Source Han Serif CN", "Source Han Serif SC",
@@ -8,6 +8,7 @@ $titleFontList: "HiraMinProN-W6", "Source Han Serif CN", "Source Han Serif SC",
 $verticalPrimaryPaddingTopPatch: 0;
 $verticalSecondaryPaddingTopPatch: 1px;
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:100,300,400,600");
+@import url('https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC:wght@300;400;700&display=swap');
 @import "animation";
 
 html,

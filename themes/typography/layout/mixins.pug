@@ -1,6 +1,6 @@
 mixin make_post(item, is_detail)
     div.post-container
-        p.post-title
+        p.post-title(style="font-family: Source Sans Pro, sans-serif")
             if is_detail
                 a(style="font-size: 40px")= item.title
             else
@@ -19,7 +19,7 @@ mixin make_post(item, is_detail)
                             i.fa.fa-folder
                             span &nbsp;
                             - item.categories.sort('posts').each(function(item) {
-                            a.a-tag(href=config.root + item.path, title= item.name)= item.name
+                            a.a-tag(style="font-family: Source Sans Pro, sans-serif",href=config.root + item.path, title= item.name)= item.name
                             span &nbsp;
                             - });
             if theme.showTags
@@ -29,7 +29,7 @@ mixin make_post(item, is_detail)
                             i.fa.fa-tag
                             span &nbsp;
                             - item.tags.sort('posts').each(function(item) {
-                            a.a-tag(href=config.root + item.path, title= item.name)= item.name
+                            a.a-tag(style="font-family: Source Sans Pro, sans-serif",href=config.root + item.path, title= item.name)= item.name
                             span &nbsp;
                             - });
 
@@ -114,7 +114,7 @@ mixin tagList()
         - site.tags.each(function (item) {    
         | <li class="listing-item">
         .listing-post
-            p.post-title
+            p.post-title(style="font-family: Source Sans Pro, sans-serif")
                 a(href= url_for(item.path), title= item.name)= item.name
             span.date.meta-item
                 != __('TagCount', item.posts.length)
