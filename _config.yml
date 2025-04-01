@@ -13,7 +13,7 @@ timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://121.41.105.96/
+url: http://www.crazyharp.icu
 
 
 permalink: :year/:month/:day/:title/
@@ -188,3 +188,14 @@ analytics:
   microsoft_clarity:
     enable: false
     project_id: <your project id under Setting, Overview>
+
+
+toc:
+  maxdepth: 2
+  class: toc
+  slugify: uslug
+  decodeEntities: false
+  anchor: false
+  #  position: after
+  #  symbol: '✦'
+  #  style: header-anchor
