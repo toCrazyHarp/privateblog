@@ -33,7 +33,7 @@
     "hexo-theme-next": "^8.21.1",
     "hexo-toc": "^1.1.0",
     "hexo-wordcount": "^6.0.1",
-    "prismjs": "^1.29.0"
+    "prismjs": "^1.30.0"
   },
   "devDependencies": {
     "postcss": "^8.4.49"
