@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // File: toc.js
 document.addEventListener('DOMContentLoaded', function() {
     // ================= 配置参数 =================
-    const DEBUG_MODE = true; // 控制调试信息输出
+    const DEBUG_MODE = false; // 控制调试信息输出
     const SCROLL_OFFSET = 20; // 导航栏偏移补偿
     const ACTIVATION_BUFFER = 50; // 提前激活缓冲像素
     const SMOOTH_SCROLL = true; // 是否启用平滑滚动
