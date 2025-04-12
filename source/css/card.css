@@ -1,0 +1,50 @@
+/* 卡片布局样式 */
+.card {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(48% - 0.75rem);
+    margin: 0.75rem;
+
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background: #fff;
+    transition: transform 0.3s ease;
+}
+.card-header{
+    display: flex;
+    flex-direction: row; /* 横向布局 */
+    align-content: center;
+}
+/* 悬停轻微放大 */
+.card:hover {
+    transform: scale(1.02);
+}
+
+/* 图片部分 */
+.card-image {
+    width: 25%;
+    display: block;
+    object-fit: cover;
+}
+
+/* 卡片主体 */
+.card-body {
+    padding: 1.2rem;
+}
+
+/* 标题部分：更大更醒目 */
+.card-title {
+    padding-left: 1em;
+}
+
+/* 内容部分：略微增大，适合正文阅读 */
+
+
+/* 响应式：窄屏下单列显示 */
+@media (max-width: 640px) {
+    .card {
+        width: 100%;
+        margin: 0.75rem 0;
+    }
+}

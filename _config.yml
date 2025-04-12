@@ -116,6 +116,8 @@ plugin:
   - hexo-toc
   - hexo-prismjs
   - hexo-math
+  - markdown-it-container
+  - hexo-renderer-markdown-it
   # ... other plugins you'd like to enable
 
 # Generate archive page
@@ -199,3 +201,7 @@ toc:
   #  position: after
   #  symbol: '✦'
   #  style: header-anchor
+
+markdown:
+  plugins:
+    - ../../../source/js/hexo-renderermd.js  # 指向自定义配置文件
