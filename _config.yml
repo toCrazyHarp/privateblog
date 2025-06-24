@@ -203,5 +203,6 @@ toc:
   #  style: header-anchor
 
 markdown:
+  renderer: markdown-it
   plugins:
     - ../../../source/js/hexo-renderermd.js  # 指向自定义配置文件

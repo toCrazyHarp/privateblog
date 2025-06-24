@@ -66,11 +66,7 @@ div#site-nav.site-title-links(style="font-family: Source Sans Pro, sans-serif")
             li
                 if is_current('archives/')
                     a.current(href=config.root + config.archive_dir)= __('Archives')
-                else
-                    a(href=config.root + config.archive_dir)= __('Archives')
-        if !is_post()
-            li
-                if is_archive()
+                else if is_archive()
                     a.current(href=config.root + config.archive_dir)= __('Archive')
                 else
                     a(href=config.root + config.archive_dir)= __('Archive')
