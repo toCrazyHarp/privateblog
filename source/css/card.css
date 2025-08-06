@@ -38,12 +38,18 @@
 
 /* 标题部分：更大更醒目 */
 .card-title {
-    padding-left: 1em;
+    padding-left: 0.5em;
     color: white;
 }
 
 .card-title > span {
+    display: block;
+    width: 250px; /* Set the maximum width */
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide overflowed text */
+    text-overflow: ellipsis; /* Display ellipsis for overflowed text */
     color: #ffffff;
+    font-size: 25px;
     font-family: "HiraMinProN-W6", "Source Han Serif CN", "Source Han Serif SC", "Source Han Serif TC", serif
 }
 /* 内容部分：略微增大，适合正文阅读 */

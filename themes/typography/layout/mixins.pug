@@ -40,7 +40,11 @@ mixin make_post(item, is_detail)
                 | 字,阅读需要约
                 span.post-count= min2read(item.content)
                 | 分钟
-            div.post-abstract.pages-format(style="font-size: 20px; line-height: 1.8em;")!= item.content
+            div.post-abstract.pages-format(style=`font-size: 20px; width:100%;line-height: 1.8em; ${
+                item.type === 'line' ? 'writing-mode: vertical-rl;' :
+                    item.type === 'mid' ? 'text-align: center;' :
+                        item.type === 'wai' ? '' : ''
+            }`)!= item.content
         else
             p.post-abstract!= item.description || truncate(strip_html(item.content.replace(/<pre(?: |>)[^]*?<\/pre>/gm, ' ')), {length: 50})
 

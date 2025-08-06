@@ -6,12 +6,13 @@ html(lang="zh-CN")
     body
         div#stage.container
             div.row
-                include sidebar
+                if page.visible !==false
+                    include sidebar
                 div#main-container.col-sm-9.col-xs-12.main-container.invisible
-
                     block content
-                    div.visible-xs.site-bottom-footer
-                        include footer
+                    if page.visible !== false
+                        div.visible-xs.site-bottom-footer
+                            include footer
 
         script(src= url_for('/js/paiban.js'))
         script(src= url_for('js/prism/prism.js'))

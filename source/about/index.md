@@ -3,9 +3,14 @@ title: about
 layout: about
 ---
 # Crazyharp
+<p style="color: green;font-size: larger">Accepted！ </p>、
 
+普通XMU在读，ACGN爱好者
+这是一个记录工作及一些没地方找人说的话的博客
 
-<p style="color: green;font-size: larger">Accepted！ </p>
+## 联系我
+我的邮箱： av3709035@163.com
+
 
 # 更新月历
 {% calendar %}
@@ -14,13 +19,12 @@ layout: about
 
 # 目前进度
 * 搬迁算法模板到网站上
-* 简单的网页动效制作中
+* 基本的内容模式编辑完成
 * about页面装修中
-* 日历功能不稳定
-* Last Update: 2025-4-11
-# 友情链接
+* Last Update: 2025-8-02
+# 友情链接/最近疑似解析挂了绝赞懒得修中
 
-::: card[Coast23‘s Blog](https://coast23.github.io/images/avatar.png)
+::: card[Coast23‘s Blog](https://coast23.github.io/images/avatar.jpg)
 Blog by Coast23
 [链接](https://coast23.github.io)
 :::
