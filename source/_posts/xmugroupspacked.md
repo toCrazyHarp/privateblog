@@ -58,7 +58,7 @@ description: 你怎么翻到底了阿
       <td>791578639</td>
     </tr>
     <tr>
-      <td>泛VOCALOID群    </td>
+      <td>泛VOCALOID同好群    </td>
       <td>厦门大学泛VOCALOID同好团</td>
       <td>124117746</td>
     </tr>
@@ -76,6 +76,56 @@ description: 你怎么翻到底了阿
       <td>东方群    </td>
       <td>幻想韵律-厦大幻想乡</td>
       <td>681280620</td>
+    </tr>
+    <tr>
+      <td>怪猎同好群    </td>
+      <td>XMU 我要玩太刀</td>
+      <td>1004898593</td>
+    </tr>
+    <tr>
+      <td>魂/类魂/魂类同好群    </td>
+      <td>泥虾魂批聚集地</td>
+      <td>1027744071</td>
+    </tr>
+    <tr>
+      <td>主机/掌机游戏交流群    </td>
+      <td>厦大主机&掌机游戏交流群</td>
+      <td>668650535</td>
+    </tr>
+    <tr>
+      <td>棋牌桌游社（思明）   </td>
+      <td>厦门大学棋牌桌游社群（思明）</td>
+      <td>477412731</td>
+    </tr>
+    <tr>
+      <td>galgame同好群   </td>
+      <td>现视研人际关系分部 xmu.ver</td>
+      <td>859713958</td>
+    </tr>
+    <tr>
+      <td>APEX同好群</td>
+      <td>厦大派派广场</td>
+      <td>172762457</td>
+    </tr>
+    <tr>
+      <td>我的世界同好群</td>
+      <td>厦门大学Minecraft交流群</td>
+      <td>481146773</td>
+    </tr>
+    <tr>
+      <td>文明系列群</td>
+      <td> 厦大文明Ⅵ‌同好会</td>
+      <td> 730896469</td>
+    </tr>
+    <tr>
+      <td>kig同好群</td>
+      <td> 厦门大学kiger群</td>
+      <td> 368283193</td>
+    </tr>
+    <tr>
+      <td>明日方舟同好群</td>
+      <td> 泰拉最高议会驻厦大办事处</td>
+      <td> 747839793</td>
     </tr>
   </tbody>
 </table>

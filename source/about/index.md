@@ -3,7 +3,7 @@ title: about
 layout: about
 ---
 # Crazyharp
-<p style="color: green;font-size: larger">Accepted！ </p>、
+<p style="color: green;font-size: larger">Accepted！ </p>
 
 普通XMU在读，ACGN爱好者
 这是一个记录工作及一些没地方找人说的话的博客
