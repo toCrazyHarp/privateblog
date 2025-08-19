@@ -1,0 +1,46 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "hexo test",
+            "type": "shell",
+            "command": "hexo ge;  hexo s",
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "hexo deploy",
+            "type": "shell",
+            "command": "hexo clean; hexo ge; hexo d",
+            "group": "test",
+            "presentation": {
+                "echo": true,
+                "reveal": "always"
+            }
+        },
+        {
+            "label": "hexo deploy without clean",
+            "type": "shell",
+            "command": "hexo ge; hexo d",
+            "group": "test",
+            "presentation": {
+                "echo": true,
+                "reveal": "always"
+            }
+        },
+        {
+            "label": "hexo daily generate",
+            "type": "shell",
+            "command": "hexo gc -w=40",
+            "group": "test",
+            "presentation": {
+                "echo": true,
+                "reveal": "always"
+            }
+        },
+    ]
+}

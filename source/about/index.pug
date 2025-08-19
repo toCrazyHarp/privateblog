@@ -1,0 +1,66 @@
+---
+title: About
+layout: about
+suojin: false 
+---
+style. 
+    .divider {
+        height: 1px;
+        background: #2e405b;
+        border: none;
+        margin: 30px 0;
+    }
+    
+link(rel="stylesheet", href="/css/card.css")
+hr.divider
+
+.outercontainer(style="display: flex;flex-direction: row;  justify-content: center; align-items: center; min-height:8em;margin-top: 2em;")
+    #avatar(href="https://imgse.com/i/pVBazK1",style=" width: 8em;margin-right: 3em;"): img(src="https://s21.ax1x.com/2025/08/19/pVBazK1.jpg" alt="pVBazK1.jpg" border="0" style="border-radius:50%;object-fit: cover;border: 2px solid black;")
+    div(style="display: flex; flex-direction: column; justify-content: center; align-items: flex-start;")
+        h1 CrazyHarp 
+        h5 XMU在读|ACGN爱好者|闲人
+        h5 这是一个记录工作及一些没地方找人说的话的博客
+
+
+hr.divider
+
+h1 更新月历
+
+{% calendar %}
+{"monthLang": "cn", "dayLang": "cn", "title": "更新日历","width": "90%"}
+{% endcalendar %}
+
+h2 联系我
+p 我的邮箱：av3709035@163.com
+
+h1 关于本站
+p 
+    |这里简单记录了以下内容：
+    br
+    |1. 关于我自己的技术学习的心得与笔记
+    br
+    |2. 一些读后感
+    br
+    |3. 文段的摘抄
+    br
+    |4. 一些小工具性质的东西
+h1 友情链接
+include ../pug/card.pug
+-
+    const friendlink = [
+        { name: "Coast23‘s Blog", avatar: "https://coast23.github.io/images/avatar.jpg ", link: "https://coast23.github.io" ,description: "Blog by Coast23" },
+        { name: "Stellar 鱼", avatar: "https://www.stellarfishblog.space/image/miku.jpg", link: "https://www.stellarfishblog.space", description: "Blog by ★🐟" },
+        { name: "SakuraQ's Cyber Field", avatar: "https://yaesakuraq.github.io/img/SakuraQ.jpg", link: "https://yaesakuraq.github.io", description: "Blog by SakuraQ" },
+        { name:"广告位招租", avatar: "https://s21.ax1x.com/2025/08/19/pVBazK1.jpg", link: "#", description: "黄金地段，虚席以待。<br> 快速联系Crazyharp享受美好人生。"}
+    ]
+
+.card-container(style="display: flex; flex-wrap: wrap;gap: 80px 40px; margin-top: 4em;")
+    each friend in friendlink
+        .card
+            .avatar-section
+                .avatar
+                    img(src=friend.avatar alt=friend.name border="0" style="border: 2px solid black;width: 8em;")
+            .content-section
+                a(href=friend.link target="_blank" rel="noopener")= friend.name
+                p!= friend.description
+                .line.with-icon

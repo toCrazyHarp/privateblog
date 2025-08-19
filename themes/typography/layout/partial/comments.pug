@@ -60,3 +60,14 @@ if theme.dove
                     br
                     i
                         small 评论一经采用，信函恕不退还，信鸽也不退还，请知悉。
+
+if theme.changyan && page.visible !== false
+    a#comments
+    //PC版
+    #SOHUCS
+    script(charset='utf-8' type='text/javascript' src='https://cy-cdn.kuaizhan.com/upload/changyan.js')
+    script(type='text/javascript').
+        window.changyan.api.config({
+            appid: 'cyy4dj7Wr',
+            conf: 'prod_3929cdd657fadbaadbc923de44c5bfa7'
+        });

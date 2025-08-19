@@ -1,0 +1,178 @@
+/* XMU群组页面样式 */
+.content-area {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.notice {
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.notice p {
+    margin-bottom: 10px;
+}
+
+.notice strong {
+    color: #2e405b;
+}
+
+.notice a {
+    color: #2e405b;
+    text-decoration: none;
+    border-bottom: 1px solid #2e405b;
+}
+
+.notice a:hover {
+    opacity: 0.7;
+}
+
+.search-tip {
+    background: #fff3cd58;
+    border: 1px solid #ffeaa7;
+    color: #856404;
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.content-area kbd {
+    background: #2e405b;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-family: monospace;
+    font-size: 0.9em;
+}
+
+.quote {
+    background: #ffffff45;
+    border-left: 4px solid #2e405b;
+    padding: 15px 20px;
+    margin: 20px 0;
+    font-style: italic;
+    color: #666;
+}
+
+.divider {
+    height: 1px;
+    background: #2e405b;
+    border: none;
+    margin: 30px 0;
+}
+
+.table-wrapper {
+    background: #ffffff4f;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    margin-bottom: 40px;
+}
+
+.content-area table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.content-area th {
+    background: #2e405b;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.content-area td {
+    padding: 12px 15px;
+    text-align: center;
+    border-bottom: 1px solid #e9ecef;
+    vertical-align: middle;
+}
+
+.content-area tr:hover {
+    background: #f8f9fa;
+}
+
+.content-area tr:last-child td {
+    border-bottom: none;
+}
+
+.group-number {
+    font-family: 'Courier New', monospace;
+    font-weight: 600;
+    color: #2e405b;
+    background: #f8f9fa;
+    padding: 4px 8px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: inline-block;
+}
+
+.group-number:hover {
+    background: #2e405b;
+    color: white;
+    transform: scale(1.05);
+}
+
+.section-title {
+    color: #2e405b;
+    margin: 40px 0 20px 0;
+    font-weight: 300;
+}
+
+.footer-note {
+    background: #ffffff4f;
+    border: 1px solid #e9ecef;
+    border-radius: 4px;
+    padding: 20px;
+    margin: 40px 0;
+    color: #666;
+    line-height: 1.8;
+}
+
+.copyright {
+    text-align: left;
+    padding: 20px;
+    border-radius: 4px;
+    margin-top: 40px;
+}
+
+.copy-tooltip {
+    position: fixed;
+    background: #2e405b;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    z-index: 1000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.copy-tooltip.show {
+    opacity: 1;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .content-area th, 
+    .content-area td {
+        padding: 10px 8px;
+        font-size: 0.9rem;
+    }
+    
+    .notice {
+        padding: 15px;
+    }
+    
+    .table-wrapper {
+        overflow-x: auto;
+    }
+}

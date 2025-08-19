@@ -12,6 +12,7 @@ github: toCrazyHarp
 # Please do not use the two services at the same time.
 livere: # [data-uid] on livere.com
 disqus: # [short_name] on disqus.com
+changyan: true # [appid] on changyan.com
 dove: # For fun ONLY. Set to true to 'disable' comments on your site.
 
 # Set true to show the page indicator.

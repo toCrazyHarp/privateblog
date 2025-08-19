@@ -1,0 +1,154 @@
+---
+title: XMU同好群汇总
+toc: true
+visible: false
+date: 2004-06-22 16:52:55 
+description: 你怎么翻到底了阿
+desc: 厦门大学民间同好群体汇总
+layout: post
+---
+
+//- 引入样式和脚本
+link(rel="stylesheet", href="/css/xmugroups.css")
+script(src="/js/xmugroupsjs.js")
+
+//- 群组数据定义
+-
+  const groups = [
+    { category: '静迹翔安', name: '静迹动漫社翔安分社', number: '334674039' },
+    { category: '静迹思明', name: '厦大静迹动漫社2024', number: '945215497' },
+    { category: '学马仕群', name: '初星学院癔症治疗中心', number: '811545808' },
+    { category: 'lovelive同好群', name: '厦门大学lovelive同好会', number: '922217432' },
+    { category: '音游总群', name: 'XMU音游同好会', number: '828909832' },
+    { category: '拉邦带烤群', name: 'XMU拉邦带烤联谊群', number: '930574190' },
+    { category: '移动端音游群', name: 'XMU音游同好会 | 移动端&PC端分会场', number: '791578639' },
+    { category: '泛VOCALOID同好群', name: '厦门大学泛VOCALOID同好团', number: '124117746' },
+    { category: '少女歌剧同好群', name: '长颈鹿收容所', number: '926506120' },
+    { category: 'FGO群', name: '🦐大月批交流地', number: '260217028' },
+    { category: '东方群', name: '幻想韵律-厦大幻想乡', number: '681280620' },
+    { category: '怪猎同好群', name: 'XMU 我要玩太刀', number: '1004898593' },
+    { category: '魂/类魂/魂类同好群', name: '泥虾魂批聚集地', number: '1027744071' },
+    { category: '主机/掌机游戏交流群', name: '厦大主机&掌机游戏交流群', number: '668650535' },
+    { category: '棋牌桌游社（思明）', name: '厦门大学棋牌桌游社群（思明）', number: '477412731' },
+    { category: 'galgame同好群', name: '现视研人际关系分部 xmu.ver', number: '859713958' },
+    { category: 'APEX同好群', name: '厦大派派广场', number: '172762457' },
+    { category: '我的世界同好群', name: '厦门大学Minecraft交流群', number: '481146773' },
+    { category: '文明系列群', name: '厦大文明Ⅵ‌同好会', number: '730896469' },
+    { category: 'kig同好群', name: '厦门大学kiger群', number: '368283193' },
+    { category: '明日方舟同好群', name: '泰拉最高议会驻厦大办事处', number: '747839793' },
+    { category: '杀戮尖塔同好群', name: 'xmu最尊重鸡煲的群', number: '1001024584' },
+    { category: 'LOL同好群', name: '来XMU开一把吗', number: '165360740' },
+    { category: '战地同好群', name: 'XMU战地捞薯群', number: '857061040' },
+    { category: 'csgo同好群', name: 'XMU-CS社团', number: '974818615' },
+    { category: '瓦同好群', name: '🦐兵瓦瓦独立团', number: '930877060' },
+    { category: '三角洲同好群', name: '三角洲🦐大战场', number: '958952445' },
+    { category: '翔安游戏王同好群', name: '厦门大学决斗与口胡学院', number: '1082911539' },
+    { category: '炉石传说同好群', name: '厦大炉石传说交流群', number: '776910091' },
+    { category: '绝区零同好群', name: 'ZZZ神秘绳匠组织XMU分部', number: '1004052907' },
+    { category: '星穹铁道同好群', name: 'XMU星穹铁道秘密结社', number: '709375775' },
+    { category: '七圣召唤同好群', name: '厦门大学七圣召唤同好群', number: '1007616617' },
+    { category: '乙游同好群', name: '厦大乙游群', number: '754506990' },
+    { category: '鸣潮同好群', name: '厦潮共鸣者集群', number: '636543305' },
+    { category: 'ow同好群', name: '厦门ow（归来）', number: '590785400' },
+    { category: '火影同好群', name: 'XMU最后阳间', number: '608770708' },
+    { category: '钢铁雄心4同好群', name: '钢丝功德林🦐大分所', number: '1059883527' },
+    { category: '原神同好群', name: 'XMUer异世相遇群', number: '595014905' },
+    { category: '洛克王国同好群', name: '南强🦐大洛克', number: '1042848837' },
+    { category: '战雷同好群', name: '🦐🧊雷霆', number: '1059701488' },
+  ];
+
+  const friendLinks = [
+    { category: '厦门高校动漫联盟（厦萌会）', name: '厦萌会-交流总群', number: '799048559' },
+    { category: '厦萌会宅舞组织', name: '厦萌会-宅舞联合', number: '1032819029' },
+    { category: '厦门大学贴吧群', name: '2025年新🦐兵交流群', number: '128668750' }
+  ];
+  const frienddoc= [
+    {name: '厦门大学翔安校区美食宝典',links: 'https://hcnkhod9ookj.feishu.cn/wiki/TDMHwZHxXipFUAkD12icgJyVnse',author: '01001100'},
+    {name: '新番观看快速入门', links: 'https://mp.weixin.qq.com/s/B4949LZKeHzDaRrpLwVY1A', author: '折叠'}
+  ];
+
+.content-area
+  .notice
+    p 本网页仅用于
+      strong XMU相关同好群交流
+      | ，若需在本页添加群号请联系
+      a(href="http://www.crazyharp.icu/about/index.html", target="_blank") 竖琴
+      | （2572519011）操作。
+    p 目前阶段仅内部使用，服务器规模不大请勿转发到非XMU群聊。
+    p 当然，我们欢迎在厦门大学群组里广泛转发，互通有无是很重要的事情，团结一致才有力量。
+    p 如果并非第一次访问本页面请刷新一下以防缓存未清除导致内容过时。
+    p 因为是
+      strong 小成本
+      | 制作所以搜索请自行使用 
+      kbd Ctrl
+      |  + 
+      kbd F
+      | ，就不提供搜索功能了（
+    p 目前收录群组数量：
+      strong= groups.length+friendLinks.length
+    p 目前收录链接数量：
+      strong= frienddoc.length
+
+  .quote 以及加入静迹动漫社谢谢喵
+
+  hr.divider
+
+  .table-wrapper
+    table
+      thead
+        tr
+          th(style="width: 25%;") 群属性
+          th(style="width: 45%;") 群名
+          th(style="width: 30%;") 群号
+      tbody
+        each group in groups
+          tr
+            td= group.category
+            td= group.name
+            td
+              span.group-number(onclick=`copyToClipboard('${group.number}')`)= group.number
+
+  hr.divider
+
+  h2.section-title 友情社群
+
+  .table-wrapper
+    table
+      thead
+        tr
+          th(style="width: 30%;") 群属性
+          th(style="width: 40%;") 群名
+          th(style="width: 30%;") 群号
+      tbody
+        each link in friendLinks
+          tr
+            td= link.category
+            td= link.name
+            td
+              span.group-number(onclick=`copyToClipboard('${link.number}')`)= link.number
+
+  hr.divider
+
+  h2.section-title 友情链接
+  each lnk in frienddoc 
+    p: a(href=lnk.links, target="_blank"). 
+      #{lnk.name}  by #{lnk.author}
+
+  hr.divider
+  .footer-note
+    | 为了改变尼虾松散的爱好者团体只能通过水群得到新鲜血液的问题，我们设置了这个页面。
+    br
+    | 我们会在百团展示此页面来进行引流，加入本页面则表示您理解我们的初衷。
+    br
+    | 最终解释权归竖琴所有。
+
+  hr.divider
+
+
+  .quote.
+    Developed by #[a(href="https://hexo.io", target="_blank") Hexo] <br>
+    Theme #[a(href="https://github.com/SumiMakito/hexo-theme-typography", target="_blank") Typography] by Makito <br>
+    Edit & Maintenance by #[a(href="http://www.crazyharp.icu/about/index.html", target="_blank") CrazyHarp] <br>
+
+  hr.divider
+.copy-tooltip#copyTooltip 已复制到剪贴板
